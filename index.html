@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="second-container">
+      <header>
+        <nav class="nav">
+          <h1 class="logo"> YogaCenter</h1>
+          <ul id="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">AboutYoga</a></li>
+            <li><a href="#">YogaBlog</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+          <ul id="sign-links">
+           <li id="signBtn"><a href="#" >SignIn</a></li>
+           <li id="symbol">/</li>
+           <li><a href="#">SignUp</a></li>
+          
+         </ul>
+   
+        </nav>
+        <div class="btn">
+         <button class="btnMember button" id="btnList">GetMethod</button>
+         <button class="btnAdd button" id="btnAddNew">PostMethod</button>
+        </div>
+     
+       </header>
+       <div class="tableContainer">
+         <form>
+           
+           <input type="search" id="search" name="search" placeholder="Find a member... ">
+           <!-- <input type="submit" value="Search" class=" submitBtn"> -->
+         </form>
+         <table class="table">
+           <caption class="tableTitle">Our Members</caption>
+          
+           <thead id="tHead">
+             <tr>
+               <th rowspan="2">Id</th>
+               <th  rowspan="2">Name</th>
+               <th  rowspan="2">UserName</th>
+               <th  rowspan="2">Email</th>
+               <th  colspan="4">Address</th>
+               <th rowspan="2">Phone</th>
+               <th rowspan="2">Website</th>
+               <th colspan="3">Company</th>
+             </tr>
+            <tr>
+              <th rowspan="2">Street</th>
+              <th rowspan="2">Suite</th>
+              <th rowspan="2">City</th>
+              <th rowspan="2">Zip-code</th>
+              <th rowspan="2">Name</th>
+              <th rowspan="2">CatchPhrase</th>
+              <th rowspan="2">Bs</th>
+             
+             </tr>
+           </thead>
+           <tbody id="tbody" class="bg-secondary">
+            <!-- add with js -->
+           </tbody>
+         </table>
+       </div>
+          
+       <!-- for post method -->
+       <div class="tableContainer1">
+         <form method="POST" id="form2">
+          
+           <input type="text" id="name" placeholder="Add your name...">
+           <input type="email" id="email" placeholder="Add your email...">
+           <textarea placeholder="Write your message..." id="message"></textarea>
+           <input type="submit" id="submitAdd" value="Submit">
+         </form>
+         
+         <table class="table">
+           <caption class="tableTitle">Comments</caption>
+          
+           <thead>
+             <tr>
+               <th >Id</th>
+               <th >Name</th>
+               <th >Email</th>
+               <th>Message</th>
+             </tr>
+            
+           </thead>
+           <tbody id="comBody" class="bg-secondary">
+            
+           </tbody>
+         </table>
+       </div>
+       <div id="sign-container">
+         <div id="form3-container">
+           <h2 class="tableTitle" id="signTitle">Sign in to see your profile </h2>
+           <form method="POST" id="form3">
+             <div class="message">
+               <small ></small>
+             </div>
+           
+             <input type="text" id="name1" placeholder="Phone number, username, or email...">
+             <input type="password" id="password" placeholder="Password...">
+            
+           
+             <input type="submit" id="submitLog" value="Login">
+           </form>
+         </div>
+         
+       </div>
+    </div>
+    
+
+    <!--end main container -->
+  </div>
+
+  <script src="main.js"></script>
+  <!-- <script> document.querySelector("img").src += "?nocache=" +Math.random();</script>  -->
+</body>
+</html>
